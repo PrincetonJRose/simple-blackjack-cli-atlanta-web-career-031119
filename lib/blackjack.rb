@@ -39,7 +39,7 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
-  choice = get_user_input
+  get_user_input
   if choice != 'h' or choice != 's'
     invalid_command
     prompt_user
