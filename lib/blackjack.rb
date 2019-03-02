@@ -43,6 +43,7 @@ def hit?(card_total)
   if choice != 'h' or choice != 's'
     invalid_command
     prompt_user
+  end
   if choice == 'h'
     card_total += deal_card
   end
