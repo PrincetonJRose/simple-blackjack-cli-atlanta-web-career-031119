@@ -20,7 +20,8 @@ end
 
 def get_user_input
   # code #get_user_input here
-  gets
+  choice = gets
+  return choice
 end
 
 def end_game(card_total)
@@ -40,7 +41,7 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
-  choice = get_user_input
+  get_user_input
   if choice != 'h' or choice != 's'
     invalid_command
   end
