@@ -20,7 +20,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  user_choice = gets.chomp
+  choice = gets.chomp
 end
 
 def end_game(card_total)
@@ -40,10 +40,10 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
-  user_choice = get_user_input
-  if user_choice == 'h'
+  choice = get_user_input
+  if choice == 'h'
     card_total += deal_card
-  elsif user_choice == 's'
+  elsif choice == 's'
     return card_total
   else
     invalid_command
