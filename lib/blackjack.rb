@@ -44,8 +44,7 @@ def hit?(card_total)
     invalid_command
     prompt_user
   elsif choice == 'h'
-    num = deal_card
-    card_total += num
+    card_total += deal_card
   end
   card_total
 end
